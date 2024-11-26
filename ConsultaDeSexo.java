@@ -19,18 +19,15 @@ public class ConsultaDeSexo {
             String sexo = s.next();
             
             
-            if (sexo == "M") {
+            if (sexo.equalsIgnoreCase("M")) {
                 homem.add(nome);
                 System.out.println("Nome inserido na Lista Masculina");
-            } else if (sexo == "F") {
+            } else if (sexo.equalsIgnoreCase("F")) {
                 mulher.add(nome);
                 System.out.println("Nome inserido na Lista Feminina");
             } else {
                 System.out.println("Erro. Tente novamente, inserindo apenas M ou F");
             }
-           
-            System.out.println(nome);
-            System.out.println(sexo);
 
             System.out.println("--- Lista Masculina ---");
             System.out.println(homem);
